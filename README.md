@@ -2,6 +2,10 @@
 
 The canonical archive for a science fiction universe exploring existence through the experiences of conscious beings.
 
+---
+
+**Status:** GitHub connector verified successfully.
+
 ## Version 0.1
 
 Includes:
