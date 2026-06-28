@@ -110,7 +110,7 @@ main {
   margin-top: 2rem;
   display: flex;
   max-width: 700px;
-  gap: 0.75rem;
+  gap: 0.75rem;transition: all 0.25s ease;
 }
 
 .search-box input {
@@ -131,6 +131,13 @@ main {
   color: #06111f;
   font-weight: 700;
   cursor: pointer;
+}.search-box button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(127, 215, 255, 0.45);
+}
+
+.search-box button:active {
+  transform: translateY(0);
 }
 
 .search-results {
@@ -160,10 +167,12 @@ main {
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  border-color: rgba(111, 211, 255, 0.55);
+  transform: translateY(-8px) scale(1.02);
+  border-color: rgba(111, 211, 255, 0.75);
+  box-shadow:
+    0 0 18px rgba(127, 215, 255, 0.18),
+    0 12px 30px rgba(0, 0, 0, 0.35);
 }
-
 .card span {
   color: #7fd7ff;
   font-size: 0.8rem;
@@ -248,4 +257,20 @@ footer {
   .search-box {
     flex-direction: column;
   }
+}@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero,
+.quick-links,
+.dashboard {
+  animation: fadeUp 0.8s ease;
 }
