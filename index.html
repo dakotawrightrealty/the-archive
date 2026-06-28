@@ -7,10 +7,18 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="stars"></div>
+
   <header class="site-header">
-    <div class="brand">THE ARCHIVE</div>
+    <div class="brand">
+      <span class="brand-mark">◇</span>
+      <div>
+        <h1>The Archive</h1>
+        <p>Canonical Universe Database</p>
+      </div>
+    </div>
+
     <nav>
-      <a href="index.html">Home</a>
       <a href="constitution.html">Constitution</a>
       <a href="encyclopedia.html">Encyclopedia</a>
       <a href="discoveries.html">Discoveries</a>
@@ -18,66 +26,79 @@
     </nav>
   </header>
 
-  <main class="hero">
-    <section class="hero-card">
-      <p class="eyebrow">Universe Project · Version 0.1</p>
-      <h1>The Archive remembers.</h1>
-      <p class="mission">A canonical archive for a science fiction universe exploring existence through the experiences of conscious beings.</p>
-      <div class="grid cards">
-        <a class="card" href="constitution.html"><span>01</span><h2>Constitution</h2><p>The identity, rules, and creative boundaries of the universe.</p></a>
-        <a class="card" href="encyclopedia.html"><span>02</span><h2>Encyclopedia</h2><p>The facts: species, civilizations, technology, places, history, and physics.</p></a>
-        <a class="card" href="discoveries.html"><span>03</span><h2>Discoveries</h2><p>The ideas this universe explores: choice, community, curiosity, scale, and awe.</p></a>
-        <a class="card" href="journal.html"><span>04</span><h2>Writer’s Journal</h2><p>The reasoning behind creative decisions, rejected ideas, and future questions.</p></a>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">ARCHIVIST ONLINE</p>
+      <h2>The Archive Remembers</h2>
+      <p class="hero-text">
+        A living record of civilizations, discoveries, systems, species, events, and stories within this universe.
+      </p>
+
+      <div class="search-box">
+        <input id="archiveSearch" type="text" placeholder="Search the Archive..." />
+        <button onclick="searchArchive()">Search</button>
+      </div>
+
+      <div id="searchResults" class="search-results"></div>
+    </section>
+
+    <section class="quick-links">
+      <a class="card" href="constitution.html">
+        <span>01</span>
+        <h3>Constitution</h3>
+        <p>The unbreakable rules and identity of the universe.</p>
+      </a>
+
+      <a class="card" href="encyclopedia.html">
+        <span>02</span>
+        <h3>Encyclopedia</h3>
+        <p>Species, planets, technology, civilizations, and major records.</p>
+      </a>
+
+      <a class="card" href="discoveries.html">
+        <span>03</span>
+        <h3>Discoveries</h3>
+        <p>New ideas, unresolved concepts, and expanding canon.</p>
+      </a>
+
+      <a class="card" href="journal.html">
+        <span>04</span>
+        <h3>Writer’s Journal</h3>
+        <p>Creative notes, decisions, and development history.</p>
+      </a>
+    </section>
+
+    <section class="dashboard">
+      <div class="panel">
+        <h2>SYSTEM STATUS</h2>
+        <div class="status-row"><span>Archive Integrity</span><strong>100%</strong></div>
+        <div class="status-row"><span>Known Civilizations</span><strong>0</strong></div>
+        <div class="status-row"><span>Recorded Species</span><strong>0</strong></div>
+        <div class="status-row"><span>Star Systems</span><strong>0</strong></div>
+        <div class="status-row"><span>Constitution Version</span><strong>0.1</strong></div>
+        <div class="status-row"><span>Last Update</span><strong>Today</strong></div>
+      </div>
+
+      <div class="panel">
+        <h2>LATEST DISCOVERIES</h2>
+        <div class="list-item">Awaiting first discovery entry.</div>
+        <div class="list-item">Awaiting civilization record.</div>
+        <div class="list-item">Awaiting confirmed timeline event.</div>
+      </div>
+
+      <div class="panel">
+        <h2>RECENT ACTIVITY</h2>
+        <div class="list-item success">Archive initialized.</div>
+        <div class="list-item success">Website deployed to GitHub Pages.</div>
+        <div class="list-item success">Dashboard foundation created.</div>
       </div>
     </section>
-  <section class="status-panel">
-  <h2>SYSTEM STATUS</h2>
-<section class="latest-panel">
-  <h2>LATEST DISCOVERIES</h2>
-<section class="activity-panel">
-  <h2>RECENT ACTIVITY</h2>
+  </main>
 
-  <div class="activity-item">
-    <span>✓</span>
-    <p>Archive initialized.</p>
-  </div>
+  <footer>
+    Built for The Archive · The universe comes first.
+  </footer>
 
-  <div class="activity-item">
-    <span>✓</span>
-    <p>Website deployed to GitHub Pages.</p>
-  </div>
-
-  <div class="activity-item">
-    <span>✓</span>
-    <p>System Status panel added.</p>
-  </div>
-</section>
-  <div class="discovery-item">
-    <span>●</span>
-    <p>Awaiting first discovery entry.</p>
-  </div>
-
-  <div class="discovery-item">
-    <span>●</span>
-    <p>Awaiting civilization record.</p>
-  </div>
-
-  <div class="discovery-item">
-    <span>●</span>
-    <p>Awaiting confirmed timeline event.</p>
-  </div>
-</section>
-  <div class="status-grid">
-    <div><span>Archive Integrity</span><strong>100%</strong></div>
-    <div><span>Known Civilizations</span><strong>0</strong></div>
-    <div><span>Recorded Species</span><strong>0</strong></div>
-    <div><span>Star Systems</span><strong>0</strong></div>
-    <div><span>Constitution Version</span><strong>0.1</strong></div>
-    <div><span>Last Update</span><strong>Today</strong></div>
-  </div>
-</section>
-</main>
-
-  <footer>Built for The Archive · The universe comes first.</footer>
+  <script src="script.js"></script>
 </body>
 </html>
