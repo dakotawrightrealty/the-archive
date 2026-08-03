@@ -1,80 +1,67 @@
 ---
-title: Session Archive
-session: 0000
+title: Session NNN — Session Title
+session: NNN
 date: YYYY-MM-DD
 status: archived
 ---
 
-# Session Archive — YYYY-MM-DD
+# Session NNN — Session Title
 
-## Manuscript updated
+- **Date:** YYYY-MM-DD
+- **Primary Objective:**
+- **Active Manuscript:** `content/manuscripts/...`
+- **Session Status:** Archived
 
-- Book:
-- Section or chapter:
-- Draft status:
-- Revision number:
+## Creative Summary
 
-## Work completed
+Summarize what the session accomplished. Preserve lasting creative value, not conversational detail.
 
-Summarize the prose written, revised, or approved during this session.
-
-## Approved decisions
+## Major Decisions
 
 - Decision:
-- Decision:
-
-## Canon updates
-
-### Constitution
-
-No change.
-
-### Encyclopedia
-
-No change.
-
-### Discoveries
-
-No change.
-
-## Rejected or deferred ideas
-
-- Idea:
-  - Disposition: Cutting Room / deferred / discarded
   - Reason:
 
-## Research created or consulted
+## Canon Established or Revised
 
-No change.
+- None.
 
-## Current state
+## Manuscript Changes
 
-### Where we stopped
+- **File:** `content/manuscripts/...`
+- **Passage or scene:**
+- **Draft or revision status:**
 
-Describe the exact point where the session ended.
+## Creative Reasoning
 
-### Next objective
+Record the reasoning future sessions will need to understand the decisions made.
 
-State the first meaningful task for the next session.
+## Open Questions
 
-### Open questions
+- None.
 
-- Question:
+## Deferred Ideas
 
-## Files updated
+- None.
 
-- [ ] Manuscript
-- [ ] Writer's Journal
-- [ ] Current State
-- [ ] Constitution
-- [ ] Encyclopedia
-- [ ] Discoveries
-- [ ] Cutting Room
-- [ ] Research
+When applicable, identify whether material was moved to the Cutting Room, Research, or left unresolved.
 
-## Archival check
+## Recommended Next Objective
 
-- [ ] Approved prose is stored outside chat.
+State the clearest next creative task.
+
+## Files Updated
+
+- `sessions/YYYY/session-NNN-short-title.md`
+- `content/current-state/current-state.md`
+- `content/manuscripts/...`
+- Add other changed files only when applicable.
+
+## Archival Verification
+
+- [ ] Approved prose is stored in the manuscript.
+- [ ] Important reasoning is preserved in the Writer’s Journal.
 - [ ] Brainstorming has not been mislabeled as canon.
-- [ ] Rejected material worth preserving was moved to the Cutting Room.
-- [ ] Current State accurately prepares the next session.
+- [ ] Relevant rejected or deferred material has been preserved.
+- [ ] Current State identifies the exact next starting point.
+- [ ] This record is curated and is not a chat transcript.
+- [ ] All changes are committed to GitHub.
